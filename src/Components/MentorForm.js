@@ -11,7 +11,7 @@ function MentorForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const posted_mentor = await axios.post(`http://localhost:4100/Mentors`, { name, email, course });
+      const posted_mentor = await axios.post(`https://assign-mentor-5axr.onrender.com/Mentors`, { name, email, course });
       setMentors([...mentors, posted_mentor.data]);
       setname('');
       setemail('');

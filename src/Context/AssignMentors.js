@@ -7,7 +7,7 @@ export const AssignMentorsContext = React.createContext();
 export const AssignMentorProvider = ({ children }) => {
   const [students, setStudents] = useState([]);
   const [mentors, setMentors] = useState([]);
-  const BaseURL = `http://localhost:4100`;
+  const BaseURL = `https://assign-mentor-5axr.onrender.com/`;
 
   // Define fetchData using useCallback
   const fetchData = useCallback(async () => {
